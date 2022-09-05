@@ -732,17 +732,51 @@ address {
 	column-gap: 9px;
 }
 
+.treaty-label {
+	display: flex;
+	align-items: center;
+}
+
 .treaty-input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+	/* -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute; */
+}
+
+.treaty-check {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	margin: 0 10px 0 0;
 	
-	width: 16px;
-	height: 16px;
+}
+
+.treaty-input:checked + .treaty-check {
+	border-color: var(--active-color);
+	background-color: var(--active-color);
+	background-image: url("../images/svg/check.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-origin: border-box;
 }
 
 .treaty-agree {
 	color: var(--secondary-color);
 }
 
-.treaty-agree a {
+.treaty-label a {
 	text-decoration: underline;
 	color: var(--active-color);
 }

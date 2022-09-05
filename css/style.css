@@ -658,7 +658,7 @@ address {
 .subscribee-icon {
 	position: absolute;
 	top: 50%;
-	
+	fill: #fff;
 	transform: translateY(-50%);
 }
 
@@ -695,6 +695,12 @@ address {
 .modal-field-comments {
 	resize: none;
 	padding: 12px 0 0 16px;
+	width: 100%;
+}
+
+.modal-field-comments:hover,
+.modal-field-comments:focus {
+	border-color: var(--active-color);
 }
 
 .modal-label {
@@ -714,16 +720,22 @@ address {
 	padding-left: 30px;
 }
 
+.modal-input:hover,
+.modal-input:focus {
+	border-color: var(--active-color);
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus +.modal-icon {
+	fill: var(--active-color);
+	border-color: var(--active-color);
+}
+
 .modal-icon {
 	position: absolute;
 	top: 55%;
 	left: 15px;
 	transform: translate(50% 50%);
-} 
-
-.modal-input:hover + .modal-icon,
-.modal-input:focus +.modal-icon {
-	fill: var(--active-color);
 }
 
 .modal-treaty {
@@ -770,6 +782,7 @@ address {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-origin: border-box;
+	background-position: center;
 }
 
 .treaty-agree {

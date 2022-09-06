@@ -726,7 +726,7 @@ address {
 }
 
 .modal-input:hover + .modal-icon,
-.modal-input:focus +.modal-icon {
+.modal-input:focus + .modal-icon {
 	fill: var(--active-color);
 	border-color: var(--active-color);
 }
@@ -767,12 +767,11 @@ address {
 
 .treaty-check {
 	display: inline-block;
-	width: 15px;
+	width: 16px;
 	height: 15px;
 	border: 1px solid rgb(0, 0, 0);
 	border-radius: 4px;
 	margin: 0 10px 0 0;
-	
 }
 
 .treaty-input:checked + .treaty-check {
@@ -792,6 +791,7 @@ address {
 .treaty-label a {
 	text-decoration: underline;
 	color: var(--active-color);
+	margin-left: 5px;
 }
 
 .modal-button {

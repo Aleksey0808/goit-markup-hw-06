@@ -690,6 +690,10 @@ address {
 	margin-bottom: 10px;
 }
 
+.modal-field-bottom {
+	margin-bottom: 20px;
+}
+
 .modal-field-comments {
 	display: block;
 

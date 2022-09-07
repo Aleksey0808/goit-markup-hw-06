@@ -19,6 +19,12 @@ img {
 	display: block;
 }
 
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 :root{
 	--main-color: #212121;
 	--secondary-color: #757575;
@@ -87,7 +93,7 @@ body{
   border-bottom:1px solid #ECECEC;
 }
 
-.main-nav {
+.header__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -595,16 +601,12 @@ address {
 /* footer-subscribee */
 
 .footer-subscribee {
-	
-}
-
-.footer-subscribee-wrapper {
 	display: flex;
 	flex-direction: column;
 	
-
 	color: #fff;
 }
+
 
 .subscribee-label {
 	font-weight: 700;
@@ -679,10 +681,6 @@ address {
 	
 	color: #212121;
 	margin-bottom: 12px;
-}
-
-.form-group {
-	
 }
 
 .modal-field {

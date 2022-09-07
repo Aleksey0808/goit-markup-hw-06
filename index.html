@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-  <div class="container main-nav">
+  <div class="container header__wrapper">
     <nav class="header-menu">
       <a class="menu-logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
       <ul class="menu-list">
@@ -378,7 +378,6 @@
       </ul>
     </div>
     <form class="footer-subscribee">
-    <div class="footer-subscribee-wrapper">
         <label class="subscribee-label" for="mail">Підпишіться на розсилку</label>
         <div class="subscribee-field">
           <input class="subscribee-input" type="email" name="email" placeholder="E-mail" id="mail" required />
@@ -389,7 +388,6 @@
             </svg>
           </button>
         </div>
-    </div>
     </form>
   </address>
  </div>
@@ -404,48 +402,41 @@
     <div class="modal-form">
       <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
       <form>
-        <div class="form-group" role="group">
-          
-          <div class="modal-field">
-            <label class="modal-label" for="username">Ім'я </label>
-            <input class="modal-input" type="text" name="username" id="username" required />
-            <svg class="modal-icon" width="12" height="12">
-              <use href="./images/symbol-defs.svg#name"></use>
-            </svg>
-          </div>
-
-          <div class="modal-field">
-            <label  class="modal-label" for="tell">Телефон</label>
-            <input class="modal-input" type="tel" name="tell" id="tell" required />
-            <svg class="modal-icon" width="12" height="12">
-              <use href="./images/symbol-defs.svg#tell"></use>
-            </svg>
-          </div>
-          
-          <div class="modal-field">
-            <label class="modal-label" for="email">Пошта</label>
-            <input class="modal-input" type="email" name="mail" id="email" required />
-            <svg class="modal-icon" width="12" height="12">
-              <use href="./images/symbol-defs.svg#email"></use>
-            </svg>
-          </div>
-
-          <div class="modal-field modal-field-bottom">
-            <label class="modal-label" for="comments">Коментар</label>
-            <textarea class="modal-field-comments" name="text" id="comments" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-          </div>
-
-          <div class="modal-treaty">
-            <label class="treaty-label">
-              <input class="treaty-input" type="checkbox" value="confirmation" required>
-               <span class="treaty-check"></span>
-              Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-            </label>
-          </div>
-
-          <button class="modal-button" type="submit">Відправити</button>
-          
-        </div>
+          <fieldset>
+            <div class="modal-field">
+              <label class="modal-label" for="username">Ім'я </label>
+              <input class="modal-input" type="text" name="username" id="username" required />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#name"></use>
+              </svg>
+            </div>
+            <div class="modal-field">
+              <label  class="modal-label" for="tell">Телефон</label>
+              <input class="modal-input" type="tel" name="tell" id="tell" required />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#tell"></use>
+              </svg>
+            </div>
+            <div class="modal-field">
+              <label class="modal-label" for="email">Пошта</label>
+              <input class="modal-input" type="email" name="mail" id="email" required />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#email"></use>
+              </svg>
+            </div>
+            <div class="modal-field modal-field-bottom">
+              <label class="modal-label" for="comments">Коментар</label>
+              <textarea class="modal-field-comments" name="text" id="comments" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+            </div>
+            <div class="modal-treaty">
+              <label class="treaty-label">
+                <input class="treaty-input" type="checkbox" value="confirmation" required>
+                 <span class="treaty-check"></span>
+                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+              </label>
+            </div>
+            <button class="modal-button" type="submit">Відправити</button>
+          </fieldset>
       </form>
     </div>
   </div>
